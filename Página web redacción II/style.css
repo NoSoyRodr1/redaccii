@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('background.jpg');
+  background-size: auto;
+}
+
+main {
+  padding-left: 10%;
+}
+
+/* Estilos para teléfonos */
+@media (max-width: 768px) {
+  header {
+      font-size: 18px;
+  }
+
+  nav {
+      flex-direction: column;
+  }
+
+  nav a {
+      padding: 10px 0;
+  }
+
+  main {
+      padding: 10px;
+  }
+}
+
+/* Estilos para tablee */
+@media (min-width: 769px) and (max-width: 1024px) {
+  header {
+      font-size: 24px;
+  }
+
+  nav a {
+      padding: 15px 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    overflow-x: hidden;
+}
+  main {
+      max-width: 1500px;
+      margin-top: 2%;
+      margin-left: 165px;
+  }
+  nav {
+    background-color: #11be797d;
+    color: white;
+    width: 300px;
+    height: 360vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+  }
+
+  nav li {
+    margin-top: 10px;
+    background-color: rgba(255, 21, 0, 0.382);
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    list-style: none;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  nav li:hover {
+    background-color: #840e0e;
+    list-style: none;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 40px;
+  }
+  #presentacion {
+    background-color: #daea0067;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  p {
+    font-size: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+  h2 {
+    font-size: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+  div {
+    margin-top: 30px;
+    background-color: rgba(255, 185, 88, 0.59);
+    width: 1500px;
+    height: 400px;
+    border-radius: 20px;
+  }
+  nav a[href^="#"] {
+    scroll-behavior: smooth;
+  }
+  #titulo {
+    font-size: 120px;
+    margin-left: 325px;
+    margin-bottom: 0px;
+    font-family: 'Kenia', sans-serif;
+    -webkit-text-stroke: 5px #000000;
+    color: white;
+  }
+  #ensayo {
+    margin-top: 30px;
+  }
+  #contacto {
+    font-size: 30px;
+  }
+}
